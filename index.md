@@ -47,11 +47,12 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
 My project is the thermal camera using a raspberry-pi. I plan to build it by connecting the thermal camera to the  raspberry-pi using a breadboard and then code it using python and use a virtual enviorment to run the code and get the thermal camera live video feed. The components I have used so far is the raspberry-pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together and i have finished the coding to get the thermal camera live feed. One challange I would like the solve in the future is giving a smoother video becuase currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+
 
 Code:
 import pithermalcam as ptc
@@ -73,8 +74,6 @@ Server can be found at 192.168.1.222:8000
 
 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
