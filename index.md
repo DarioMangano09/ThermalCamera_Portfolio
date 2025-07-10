@@ -1,5 +1,5 @@
 # Thermal Camera
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+I built a thermal camera that can read levels of heat using a raspberry-pi.The thermal camera displays a live video feed that can measure temperature from -40 degrees to 300 degrees. The biggest challenge was figuring out the code. I ran into many issues along the way, but after some struggle, I figured it out, and it worked smoothly. One of my biggest triumphs was getting the wiring to work on the second try. I have never used a breadboard, and this was my first time. After looking at a diagram of how a breadboard is connected, I did the wiring, and it worked. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
@@ -47,30 +47,30 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+My project is the thermal camera using a raspberry-pi. I plan to build it by connecting the thermal camera to the  raspberry-pi using a breadboard and then code it using python and use a virtual enviorment to run the code and get the thermal camera live video feed. The components I have used so far is the raspberry-pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together and i have finished the coding to get the thermal camera live feed. One challange I would like the solve in the future is giving a smoother video becuase currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
 
-# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+Code:
+import pithermalcam as ptc
+ptc.test_camera()
+ptc.stream_camera_online()
 
-void loop() {
-  // put your main code here, to run repeatedly:
+Terminal:
+dario@raspberrypi:~ $ source thermalcam-env/bin/activate
+(thermalcam-env) dario@raspberrypi:~ $ python thermal_viewer.py
+/home/dario/thermalcam-env/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py:30: RuntimeWarning: I2C frequency is not settable in python, ignoring!
+  warnings.warn(
+Camera seems to be connected and returning a value:
+Average MLX90640 Temperature: -10.1C (13.9F)
+To verify it's working, change the average temperature
+(e.g. by hold your hand over the camera) and run again to verify that the average temperature has changed.
+Server can be found at 192.168.1.222:8000
+ * Serving Flask app 'pithermalcam.web_server'
+ * Debug mode: off
 
-}
-```
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
@@ -78,9 +78,10 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| MLX90640 | Thermal imaging camera | $70 | <a href="https://www.amazon.com/Waveshare-Thermal-Camera-Communicating-Interface/dp/B07ZKJPZ7Z/ref=sr_1_1_sspa?adgrpid=1340305246887385&dib=eyJ2IjoiMSJ9.xxgAyYRQ2N7gXAl_rkWaiAbUNTq9ir7xL_FF7lnbVPZ1BIG-Xy9Jg1PnjPEQffj65afKbd81MZNi_Mxmvi43hTXkcIMCXt5QoTCOrMMZgemlI63marDnXslgVrNQgXlq33TfXZpeN9HpdAuLiXYVOzQWwb3FOY4KI38Ae1H96Dq83oWXFRgdZttz7IxRpGNmu1k6BjweNoAReUUuBkb4dg4N3IIQ9p3XcI3FNK4gwYk.UK9NfZ9ZlMiD4XuFUiyJxBDsJbVqzzhk9D_Y-32_68I&dib_tag=se&hvadid=83769226921656&hvbmt=be&hvdev=c&hvlocphy=97514&hvnetw=o&hvqmt=e&hvtargid=kwd-83769441762666%3Aloc-190&hydadcr=26613_11648999&keywords=mlx90640&mcid=120283e4638d3711b8761f76ac2a1eba&msclkid=fc461f552c0d1e2f6fd3773ae2d00dd6&qid=1752158027&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| Raspberyy-Pi 4 | Thermal camera runs off the Raspberry pi | $64 | <a href="https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X/ref=sr_1_1?crid=2TK0HKSG8KGZ8&dib=eyJ2IjoiMSJ9.HavuMzOx0pibLLpdWCmY00k6Sz1h7IjNXYchbCG7xmdC3tTHtLhOYVdjowONRCydAzPFDxep03wCpdTpyF15O3qpVOrfhGlwS5T7UusBjKpSjjwuU4toSGzLFXKSnu9Stk4yqTyvFp2SOtpmr6pytkPVxwe0i5pWF9JxhhJrgl5Wn4_lopZDRSUoI-VLVS_OlaCU1-YrYYoRQZZN-HQwAImeQ_lHvKpaWixnpv_8WcI.ubn2Ep7iLPe90hjeV6poYNxJ4BY7lyx5oSWzCHzC1wo&dib_tag=se&keywords=raspberry%2Bpi%2B4&qid=1752158166&sprefix=raspberry%2Bpi%2B4%2Caps%2C99&sr=8-1&th=1"> Link </a> |
+| Breadboard | Connects thermal camera with raspberry-pi through wires| $7 | <a href="https://www.amazon.com/ELEGOO-Breadboard-Solderless-Breadboards-Electronics/dp/B0CXF1B6GB/ref=sr_1_2_sspa?crid=2ZR7B90H10DII&dib=eyJ2IjoiMSJ9.qSRroSxKFdd8V4RwgnQiFGWmZcmB-k9IWTnY6yg2XAgvwl18SDlMTuNv_1HnNdBo5ruyzLrcnpPcEKl80Fm8ljs6lxBAvTkCMSoAQqomMvm144S9bTUW2W_-jWC1Ii5r9zzbuGu5J-a-kihJn5_HcgjM-IL_p7nWm8IJsg4Gxx8ECzg24-2CUi5wQXw8Un5xjV_pakmU37P7lamq_jUvz8NLY9uPsMaZ9fRTRvb3pxk.aQ_J2FXPo2nzi1YvCbwampjBGFUWzEqohFokvp7ksdA&dib_tag=se&keywords=breadboard&qid=1752158571&sprefix=breadboard%2Caps%2C103&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| STEMMA QT / Qwiic JST SH 4-pin Cable with Premium Female Sockets | Cables needed to connect thermal camera to breadboard | $1 | <a href="https://www.adafruit.com/product/4397"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
