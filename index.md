@@ -53,8 +53,15 @@ My project is the thermal camera using a raspberry-pi. I plan to build it by con
 
 # Code
 
-
-Code:                                                                                                                  import pithermalcam as ptc                                                                                  ptc.test_camera()                                                                                        ptc.stream_camera_online()
+'''
+import pithermalcam as ptc
+ptc.test_camera()
+ptc.stream_camera_online()
+'''
+Code:
+import pithermalcam as ptc
+ptc.test_camera()
+ptc.stream_camera_online()
 
 Terminal:
 dario@raspberrypi:~ $ source thermalcam-env/bin/activate
