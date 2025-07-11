@@ -54,11 +54,7 @@ My project is the thermal camera using a raspberry-pi. I plan to build it by con
 # Code
 ```
 import pithermalcam as ptc
-```
-```
 ptc.test_camera()
-```
-```
 ptc.stream_camera_online()
 ```
 Terminal:
