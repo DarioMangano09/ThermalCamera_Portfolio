@@ -57,7 +57,8 @@ import pithermalcam as ptc
 ptc.test_camera()
 ptc.stream_camera_online()
 ```
-Terminal:
+
+```
 dario@raspberrypi:~ $ source thermalcam-env/bin/activate
 (thermalcam-env) dario@raspberrypi:~ $ python thermal_viewer.py
 /home/dario/thermalcam-env/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py:30: RuntimeWarning: I2C frequency is not settable in python, ignoring!
@@ -69,7 +70,7 @@ To verify it's working, change the average temperature
 Server can be found at 192.168.1.222:8000
  * Serving Flask app 'pithermalcam.web_server'
  * Debug mode: off
-
+```
 
 # Bill of Materials
 
