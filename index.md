@@ -45,7 +45,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/8vxd8xakxFM?si=pcWYs5GD1ujQUzsF" title="1st Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 My project is the thermal camera using a raspberry-pi. I plan to build it by connecting the thermal camera to the  raspberry-pi using a breadboard and then code it using python and use a virtual enviorment to run the code and get the thermal camera live video feed. The components I have used so far is the raspberry-pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together and i have finished the coding to get the thermal camera live feed. One challange I would like the solve in the future is giving a smoother video becuase currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
