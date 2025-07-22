@@ -29,12 +29,10 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 
-# Second Milestone
-
-
-
+# Second Milestone Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3P9qE5royps?si=qqDuH4F6u0Epr7nq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+# Second Milestone
 This week I worked on the hardware aspect of modifications. I added an external battery source so that the person using this product can walk around with it freely. I have also added a small monitor so that you can see the live video feed in your handheld device instead of looking at a big, heavy computer monitor. Something that has been surprising about the project for me was how technical it was. I was not expecting the amount of code required, but I am glad it was necessary because it has improved my coding abilities. A previous challenge I faced was navigating different parts of the terminal. I didn't know what specific things were used for, and figuring out what different libraries did was a struggle; however, I now feel more confident working with the terminal. The final step that needs to be completed before my final milestone is implementing the final modification. I want to be able to click anywhere on the thermal camera feed and see what its exact temperature.
 
 # First Milestone
@@ -42,7 +40,7 @@ My project is the thermal camera using a Raspberry Pi. I plan to build it by con
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-# 1st Milestone Video
+# First Milestone Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8vxd8xakxFM?si=FmGbtBPXE4TS3fMx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
