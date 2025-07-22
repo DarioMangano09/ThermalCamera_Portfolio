@@ -1,5 +1,5 @@
 # Thermal Camera
-I built a thermal camera that can read levels of heat using a raspberry-pi.The thermal camera displays a live video feed that can measure temperature from -40 degrees to 300 degrees. The biggest challenge was figuring out the code. I ran into many issues along the way, but after some struggle, I figured it out, and it worked smoothly. One of my biggest triumphs was getting the wiring to work on the second try. I have never used a breadboard, and this was my first time. After looking at a diagram of how a breadboard is connected, I did the wiring, and it worked. 
+I built a thermal camera that can read levels of heat using a Raspberry Pi.The thermal camera displays a live video feed that can measure temperature from -40 degrees to 300 degrees. The biggest challenge was figuring out the code. I ran into many issues along the way, but after some struggle, I figured it out, and it worked smoothly. One of my biggest triumphs was getting the wiring to work on the second try. I have never used a breadboard, and this was my first time. After looking at a diagram of how a breadboard is connected, I did the wiring, and it worked. 
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
@@ -31,18 +31,14 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3P9qE5royps?si=qqDuH4F6u0Epr7nq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+This week I worked on the hardware aspect of modifications. I added an external battery source so that the person using this product can walk around with it freely. I have also added a small monitor so that you can see the live video feed in your handheld device instead of looking at a big, heavy computer monitor. Something that has been surprising about the project for me was how technical it was. I was not expecting the amount of code required, but I am glad it was necessary because it has improved my coding abilities. A previous challenge I faced was navigating different parts of the terminal. I didn't know what specific things were used for, and figuring out what different libraries did was a struggle; however, I now feel more confident working with the terminal. The final step that needs to be completed before my final milestone is implementing the final modification. I want to be able to click anywhere on the thermal camera feed and see what its exact temperature.
 
 # First Milestone
-My project is the thermal camera using a raspberry-pi. I plan to build it by connecting the thermal camera to the  raspberry-pi using a breadboard and then code it using python and use a virtual enviorment to run the code and get the thermal camera live video feed. The components I have used so far is the raspberry-pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together and i have finished the coding to get the thermal camera live feed. One challange I would like the solve in the future is giving a smoother video becuase currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
+My project is the thermal camera using a Raspberry Pi. I plan to build it by connecting the thermal camera to the  Raspberry Pi using a breadboard and then coding it using Python and using a virtual environment to run the code and get the thermal camera live video feed. The components I have used so far are the Raspberry Pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together, and I have finished the coding to get the thermal camera live feed. One challenge I would like to solve in the future is giving a smoother video because currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
