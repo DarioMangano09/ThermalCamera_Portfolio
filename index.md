@@ -19,23 +19,18 @@ I built a thermal camera that can read levels of heat using a Raspberry Pi.The t
 # Final Milestone
 Since my previous milestone, not much has changed. I have tried to implement a modification where you can stream the video output and click anywhere on the thermal camera video and it will show its exact temperature. However, I ran into many issues that couldn't be resolved within this final week. I plan to implement this idea once the program is finished and I will continue to work on it. My biggest challenge at BSE was starting off. First few days were difficult because a lot of what my project needed, I did not know how to do. I have never used complex code like this and I also never built electrical systems so starting off felt overwhelming and stressful. Throughout the 3 weeks, I have grown comfortable with complex coding and I also gained lots of knowledge in the electrical engineering space. One of my biggest triumphs was getting my final modification to work. I spent a long time on the code and it worked. Unfortunately, the next day the code gave me many issues and I am still debugging. Some key topics I learned were Python coding, electrical wiring, and the uses of a Raspberry Pi. I learned about useful Python skills such as using virtual environments and installing libraries. In the electrical engineering space, I learned how to use a breadboard and what different types of wires do. In the future I hope to learn more complex electrical systems. My project did not have much electrical wiring so possibly in the future I will choose a project that is more electrical-focused.
 
-
-# Second Milestone
-This week I worked on the hardware aspect of modifications. I added an external battery source so that the person using this product can walk around with it freely. I have also added a small monitor so that you can see the live video feed in your handheld device instead of looking at a big, heavy computer monitor. Something that has been surprising about the project for me was how technical it was. I was not expecting the amount of code required, but I am glad it was necessary because it has improved my coding abilities. A previous challenge I faced was navigating different parts of the terminal. I didn't know what specific things were used for, and figuring out what different libraries did was a struggle; however, I now feel more confident working with the terminal. The final step that needs to be completed before my final milestone is implementing the final modification. I want to be able to click anywhere on the thermal camera feed and see what its exact temperature.
-
 # Second Milestone Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3P9qE5royps?si=Z5EV61mCDqmXFViq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# First Milestone
-My project is the thermal camera using a Raspberry Pi. I plan to build it by connecting the thermal camera to the  Raspberry Pi using a breadboard and then coding it using Python and using a virtual environment to run the code and get the thermal camera live video feed. The components I have used so far are the Raspberry Pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together, and I have finished the coding to get the thermal camera live feed. One challenge I would like to solve in the future is giving a smoother video because currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
-
+# Second Milestone
+This week I worked on the hardware aspect of modifications. I added an external battery source so that the person using this product can walk around with it freely. I have also added a small monitor so that you can see the live video feed in your handheld device instead of looking at a big, heavy computer monitor. Something that has been surprising about the project for me was how technical it was. I was not expecting the amount of code required, but I am glad it was necessary because it has improved my coding abilities. A previous challenge I faced was navigating different parts of the terminal. I didn't know what specific things were used for, and figuring out what different libraries did was a struggle; however, I now feel more confident working with the terminal. The final step that needs to be completed before my final milestone is implementing the final modification. I want to be able to click anywhere on the thermal camera feed and see what its exact temperature.
 
 
 # First Milestone Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8vxd8xakxFM?si=FmGbtBPXE4TS3fMx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-
+# First Milestone
+My project is the thermal camera using a Raspberry Pi. I plan to build it by connecting the thermal camera to the  Raspberry Pi using a breadboard and then coding it using Python and using a virtual environment to run the code and get the thermal camera live video feed. The components I have used so far are the Raspberry Pi 4, breadboard, and the MLX90640 thermal camera. I have successfully wired the components together, and I have finished the coding to get the thermal camera live feed. One challenge I would like to solve in the future is giving a smoother video because currently the video is quite laggy. I would also like to modify my project by adding a small monitor or display that someone can transport around with the camera.
 
 # Code
 ```
@@ -44,19 +39,6 @@ ptc.test_camera()
 ptc.stream_camera_online()
 ```
 
-```
-dario@raspberrypi:~ $ source thermalcam-env/bin/activate
-(thermalcam-env) dario@raspberrypi:~ $ python thermal_viewer.py
-/home/dario/thermalcam-env/lib/python3.11/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py:30: RuntimeWarning: I2C frequency is not settable in python, ignoring!
-  warnings.warn(
-Camera seems to be connected and returning a value:
-Average MLX90640 Temperature: -10.1C (13.9F)
-To verify it's working, change the average temperature
-(e.g. by hold your hand over the camera) and run again to verify that the average temperature has changed.
-Server can be found at 192.168.1.222:8000
- * Serving Flask app 'pithermalcam.web_server'
- * Debug mode: off
-```
 
 # Bill of Materials
 
